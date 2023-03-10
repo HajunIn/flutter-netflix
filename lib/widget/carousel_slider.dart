@@ -36,16 +36,20 @@ class _CarouselImageState extends State<CarouselImage> {
         children: <Widget>[
           Container(
             padding: EdgeInsets.all(20),
+
+
+
           ),
-          CarouselSlider(
-            items: images,
-            onPageChanged: (index) {
-              setState(() {
-                _currentPage = index;
-                _currentKeyword = keywords[_currentPage];
-              });
-            },
-          ),
+    if(images != null)
+      CarouselSlider(
+        items: images,
+        // onPageChanged: (index) {
+        //   setState(() {
+        //     _currentPage = index;
+        //     _currentKeyword = keywords[_currentPage];
+        //   });
+        // },
+      ),
           Container(
             padding: EdgeInsets.fromLTRB(0, 10, 0, 3),
             child: Text(

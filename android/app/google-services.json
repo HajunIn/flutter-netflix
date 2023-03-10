@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "628858638261",
+    "firebase_url": "https://netflix-50e72-default-rtdb.firebaseio.com",
     "project_id": "netflix-50e72",
     "storage_bucket": "netflix-50e72.appspot.com"
   },

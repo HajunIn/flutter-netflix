@@ -32,7 +32,7 @@ class _DttailScreenState extends State<DetailScreen> {
                     width: double.maxFinite,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('images/' + widget.movie.poster),
+                        image: NetworkImage(widget.movie.poster),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -47,8 +47,8 @@ class _DttailScreenState extends State<DetailScreen> {
                               children: <Widget>[
                                 Container(
                                   padding: EdgeInsets.fromLTRB(0, 45, 0, 10),
-                                  child: Image.asset(
-                                      'images/' + widget.movie.poster),
+                                  child: Image.network(
+                                      widget.movie.poster),
                                   height: 200,
                                 ),
                                 Container(
