@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:infrearn/model/model_movie.dart';
 import 'package:infrearn/screen/detail_screen.dart';
@@ -46,8 +47,9 @@ List<Widget> makeCirCleImages(BuildContext context, List<Movie> movies) {
           child: Align(
             alignment: Alignment.centerLeft,
             child: CircleAvatar(
-              backgroundImage: NetworkImage(movies[i].poster),
-              radius: 48,
+                child: Image(image: new CachedNetworkImageProvider(movies[i].poster))
+              //backgroundImage: NetworkImage(movies[i].poster),
+
             ),
           ),
         ),

@@ -62,7 +62,7 @@ class _DttailScreenState extends State<DetailScreen> {
                                 Container(
                                   padding: EdgeInsets.all(7),
                                   child: Text(
-                                    '하준이 코로나',
+                                    widget.movie.title,
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontSize: 16,
