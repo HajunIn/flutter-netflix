@@ -1,6 +1,14 @@
 # infrearn
 
-A new Flutter project.
+인프런에서 인강 들어면서 만든 app
+
+넷플릭스 app 
+firebase 연동
+firebasestorage 연동
+영화 목록 보여주
+영화 보여주기
+상세페이지
+찜하기 기능
 
 ## Getting Started
 
